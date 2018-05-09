@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="udacity-grader" content="tests.json" unit-tests="tests.js">
+  <base target="_blank">
+  <title>Udacity RI: relative width</title>
+
+  <link rel="icon" sizes="192x192" href="/icon.png">
+
+  <style>
+ 
+
+    body {
+      margin: 0;
+	  width:100%;
+    }
+    img {
+      float: left;
+      /*
+      Your code goes here!
+      */
+	  margin-right: 10px;
+	  width: calc ((100% - 10px)/3);
+	  
+    }
+    /*
+    Hmmmmm... you might need another CSS class too.
+    */
+	img: last-of-type {
+	margin-right: 0;
+	}
+	.column {
+    float: left;
+    
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+	
+  </style>
+
+</head>
+
+<body>
+<div class="row">
+  <div class="column">
+  <img id="img1" src="icon.jpg" alt="Image 1" />
+  
+  <img id="img2" src="icon.jpg" alt="Image 2"  />
+  
+  <img id="img3" src="icon.jpg" alt="Image 3" />
+  
+  </div>
+  </div>
+  
+  
+
+</body>
+
+</html>
